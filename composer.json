@@ -1,0 +1,28 @@
+{
+    "name": "aasanakey/smsonline",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Aasanakey\\Smsonline\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "aasanakey",
+            "email": "sanakeyaugustineayiku@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aasanakey\\Smsonline\\SmsonlineServiceProvider"
+            ],
+            "aliases": {
+                "Debugbar": "Aasanakey\\Smsonline\\Facade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}

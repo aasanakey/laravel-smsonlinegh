@@ -9,7 +9,7 @@ use Aasanakey\Smsonline\Enum\TextMessageType;
 use Aasanakey\Smsonline\Composer\SMSComposer;
 
 
-class SMS
+class Sms
 {
     use SMSComposer;
 

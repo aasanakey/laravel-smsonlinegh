@@ -19,7 +19,7 @@
                 "Aasanakey\\Smsonline\\SmsonlineServiceProvider"
             ],
             "aliases": {
-                "Debugbar": "Aasanakey\\Smsonline\\Facade"
+                "Sms": "Aasanakey\\Smsonline\\Facades\\Sms"
             }
         }
     },

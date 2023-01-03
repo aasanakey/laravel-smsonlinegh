@@ -4,6 +4,7 @@ namespace Aasanakey\Smsonline;
 
 use Illuminate\Support\ServiceProvider;
 use Aasanakey\Smsonline\SMS;
+use Aasanakey\Smsonline\SmsonlineChannel;
 
 class SmsonlineServiceProvider extends ServiceProvider
 {
@@ -14,7 +15,14 @@ class SmsonlineServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+         //Make config publishment optional by merging the config from the package.
+        $this->mergeConfigFrom(
+            __DIR__.'/../config/smsonline.php', 'smsonline'
+        );
+
+        Notification::extend('smsonlinegh', function ($app) {
+            return new SmsonlineChannel();
+        });
     }
 
     /**

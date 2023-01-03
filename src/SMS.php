@@ -144,6 +144,11 @@ class Sms
         return $this;
     }
 
+    public function isMessageTypeSet()
+    {
+        return !is_null($this->message_type) || !empty($this->message_type);
+    }
+
     public function send()
     {
         $this->validateParams();

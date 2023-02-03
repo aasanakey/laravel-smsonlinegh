@@ -5,6 +5,7 @@ namespace Aasanakey\Smsonline;
 use Illuminate\Support\ServiceProvider;
 use Aasanakey\Smsonline\SMS;
 use Aasanakey\Smsonline\SmsonlineChannel;
+use Illuminate\Support\Facades\Notification;
 
 class SmsonlineServiceProvider extends ServiceProvider
 {

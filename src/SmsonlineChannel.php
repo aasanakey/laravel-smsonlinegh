@@ -1,6 +1,8 @@
 <?php
 namespace Aasanakey\Smsonline;
 
+use Illuminate\Notifications\Notification;
+
 class SmsonlineChannel{
 
     public function send ($notifiable, Notification $notification) {

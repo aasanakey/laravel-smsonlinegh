@@ -1,7 +1,7 @@
 <?php
 namespace Aasanakey\Smsonline;
 
-class SmsonlineSmsMessage extends Sms {
+class SmsonlineSmsMessage extends SMS {
     
     protected $personalisedValues;
 

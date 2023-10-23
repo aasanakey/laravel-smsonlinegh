@@ -124,7 +124,7 @@ trait SMSComposer
         return $this;
     }
     
-    private function isPersonalised()
+    public function isPersonalised()
     {
         return $this->personalised;
     }

@@ -8,7 +8,7 @@ class SmsonlineChannel{
     public function send ($notifiable, Notification $notification) {
         
         if (method_exists($notifiable, 'routeNotificationForSmsonline')) {
-            $number = $notifiable->routeNotificationForMnotify($notifiable);
+            $number = $notifiable->routeNotificationForSmsonline($notifiable);
         } else {
             throw new \Exception("notifiable contact number not found. Return the contact number in the routeNotificationForSmsonline method in your model", 1);
         }

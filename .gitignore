@@ -1,2 +1,6 @@
 /notify
 /vendor
+.env
+.env.testing
+.phpunit.result.cache
+phpunit.xml

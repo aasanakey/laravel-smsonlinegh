@@ -7,9 +7,10 @@ class SmsTest extends TestCase {
 
     public function test_it_can_send_sms()
     {
+        Notification::fake();
         $user = new User([
             'email' => 'test@mail.com',
-            'phone' => '0549248795'
+            'phone' => '02354555555'
         ]);
         
         $user->notify(new TestNotification());
